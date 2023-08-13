@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import liff from '@line/liff';
+import './output.css'
 
 function App() {
   const [profile, setProfile] = useState(null);
@@ -24,17 +25,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        {profile ? (
-          <div>
-            <img src={profile.pictureUrl} alt="Profile" />
-            <p>Name: {profile.displayName}</p>
-          </div>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </header>
+    <div className="mx-5">
+      <div className='bg-slate-300 p-2'>
+        
+      </div>
     </div>
   );
 }
